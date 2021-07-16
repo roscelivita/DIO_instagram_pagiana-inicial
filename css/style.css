@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.img-celular{
+    width: 50%;
+    align-self: center;
+    text-align: center;
+}
+
+.img-celular img{
+    width: 25rem;
+}
+
+.acoes_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 34rem;
+    width: 50%;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1.3rem 0;
+    width: 100%;
+    border: solid 1px lightgray;
+}
+
+.group:nth-child(1){
+    min-height: 19rem;
+}
+
+.instagram-logo{
+    height: 3rem;
+}
+
+.foto-perfil{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.foto-perfil img{
+   width: 7rem;
+}
+
+.continue{
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.remover{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account{
+    color: rgb(160, 160, 160);
+}
+
+.link-blue{
+    color: #0095f6;
+
+}
+
+.app-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url('../img/apple-button.png');
+}
+
+.app-download:nth-child(2){
+    background-image: url('../img/googleplay-button.png');
+}
+
+/* media queries */
+
+@media(max-width: 1024px){
+    .container{
+        width: 90%;
+    }
+}
+
+@media(max-width: 700px){
+    body{
+        background-color:#ffffff;
+    }
+    .group{
+        border: none;
+    }
+    .container{
+        width: 90%;
+    }
+
+    .img-celular{
+        display: none;
+    }
+
+    .acoes_container{
+        width: 90%;
+    }
+}
